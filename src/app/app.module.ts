@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplatesModule } from './templates/templates.module';
+import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { TemplatesModule } from './templates/templates.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TemplatesModule
+    TemplatesModule,
+    NgbModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
