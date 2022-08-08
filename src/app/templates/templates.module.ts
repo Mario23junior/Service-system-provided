@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NgbCollapse, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { FooterComponent } from './footer/footer.component';
+ 
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
     SidebarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
@@ -17,7 +19,7 @@ import { NgbCollapse, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   exports: [
     NavBarComponent,
     SidebarComponent,
-    NgbCollapseModule
-  ]
+    FooterComponent,
+   ]
 })
 export class TemplatesModule { }
